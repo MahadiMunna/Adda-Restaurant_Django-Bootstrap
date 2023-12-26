@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static 'meal/style.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="container mx-auto row gap-4 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 justify-content-center my-5">
+    {% for i in data.categories %}
+    <div class="card col p-2" style="max-width: 400px;">
+        <img src={{i.strCategoryThumb}} class="card-img-top" style="max-width: 350px;" alt="...">
+        <div class="card-body">
+          <h6 class="text-success">Category ID: {{i.idCategory}}</h6>
+          <h6 class="text-danger">Category: {{i.strCategory}}</h6>
+          <p class="card-text"><span class="fw-bold">Description:</span> {{ i.strCategoryDescription | truncatewords:10 }}</p>
+        </div>
+      </div>
+    {% endfor %}
+</div>      
+
+{% endblock %}

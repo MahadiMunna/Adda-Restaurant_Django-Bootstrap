@@ -1,0 +1,16 @@
+body{
+    background:linear-gradient(90deg,#63073b,#2D142C);
+}
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 10%;
+}
+
+@media only screen and (max-width: 576px) {
+    .banner{
+        flex-direction: column-reverse;
+    }
+}

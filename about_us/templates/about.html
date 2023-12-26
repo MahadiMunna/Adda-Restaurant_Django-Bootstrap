@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static 'about_us/css/style.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="container mx-auto bg-white rounded rounded-4 my-5 p-4 d-flex justify-content-center align-items-center gap-4">
+    <div>
+        <img src="{% static 'about_us/images/chef.gif' %}" alt="">
+    </div>
+    <div>
+        <h1 class="text-success text-center">Adda Restaurant</h1>
+        <p class="text-center bg-warning rounded rounded-4 p-4">Welcome to Adda Restaurant, where every meal is a celebration of flavors and camaraderie. At Adda, we believe in more than just serving delicious food; we create an experience that captures the essence of togetherness. Our chefs are dedicated to crafting culinary wonders using the finest, locally-sourced ingredients, ensuring each dish tells a story of quality and passion. Adda, in the heart of Tangail, is more than just a restaurant; it's a gathering place where friends and family come together to share laughter, good food, and unforgettable moments. Whether you're here for a casual meal, a special celebration, or just to unwind after a long day, Adda Restaurant welcomes you to an experience that goes beyond the plate. lets have a meal now! </p>
+    </div>
+</div>
+
+{% endblock %}

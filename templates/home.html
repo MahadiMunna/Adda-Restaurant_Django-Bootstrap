@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="container mx-auto banner">
+    <div class="w-50">
+        <h2 class="text-white text-center">Welcome to</h2>
+        <h1 class="text-success text-center">Adda Restaurant</h1>
+        <p class="text-light text-center">Delicious Dishes Await! Taste the Joy at Adda Restaurant. Every dish is a journey through taste, crafted with fresh, quality ingredients. Join us for a dining adventure like no other!</p>
+    </div>
+    <div class="d-flex justify-content-center">
+        <img class="rounded rounded-3" style="max-width: 500px; min-width: 300px;" src="{% static 'image/restaurant.gif' %}" alt="">
+    </div>
+</div>
+{% endblock %}
